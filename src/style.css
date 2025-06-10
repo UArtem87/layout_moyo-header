@@ -53,17 +53,18 @@ header {
 
 .is-active {
   color: #00acdc;
+  position: relative;
 }
 
 .is-active::after {
-  position: relative;
+  position: absolute;
   display: block;
   content: '';
   height: 4px;
   width: 100%;
   border-radius: 8px;
   background-color: #00acdc;
-  bottom: 4px;
+  bottom: -1px;
 }
 
 .logo {
